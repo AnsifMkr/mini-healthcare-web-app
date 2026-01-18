@@ -1,0 +1,23 @@
+{
+  "name": "mini-healthcare-support",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "client": "vite frontend",
+    "server": "node backend/server.js",
+    "build": "vite build frontend",
+    "preview": "vite preview frontend"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1",
+    "vite": "^7.2.4"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "googleapis": "^170.1.0"
+  }
+}
